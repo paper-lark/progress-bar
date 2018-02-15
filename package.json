@@ -1,0 +1,28 @@
+{
+  "name": "progress-yandex",
+  "version": "0.0.0",
+  "description": "Progress bar template",
+  "main": "index.js",
+  "author": "Max Zhuravsky <paperlark@yandex.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "private": false,
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.17.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-ruby-sass": "^3.0.0",
+    "prettier": "^1.10.2",
+    "prettier-eslint": "^8.8.1",
+    "ruby-sass-loader": "^0.4.0",
+    "style-loader": "^0.20.1"
+  }
+}

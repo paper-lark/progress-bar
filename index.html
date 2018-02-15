@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Progress</title>
+</head>
+
+<body>
+  <h1 class="header">Progress</h1>
+  <div class="progress-container">
+    <!-- TODO: remove class and text-->
+    <div class="progress" id="progress">This is where the progress bar goes</div>
+  </div>
+  <div class="controls-container">
+    <form>
+      <div class="form-group">
+        <input type="number" id="value" name="value">
+        <label for="value">Value</label>
+      </div>
+      <div class="form-group">
+        <div class="switch">
+          <input type="checkbox" name="animate" class="check" id="animate">
+          <label class="label" for="animate"></label>
+        </div>
+        <label for="value">Animate</label>
+      </div>
+      <div class="form-group">
+        <div class="switch">
+          <input type="checkbox" name="hide" class="check" id="hide">
+          <label class="label" for="hide"></label>
+        </div>
+        <label for="value">Hide</label>
+      </div>
+    </form>
+  </div>
+</body>
+<!-- TODO: change to minified -->
+<script src="/public/bundle.js"></script>
+
+</html>

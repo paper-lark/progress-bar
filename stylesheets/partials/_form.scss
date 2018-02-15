@@ -1,0 +1,53 @@
+// Form
+form {
+  padding: $form-padding;
+
+  > * {
+    padding: $form-spacing;
+  }
+
+  :first-child {
+    padding-top: 0;
+  }
+
+  :last-child {
+    padding-bottom: 0;
+  }
+}
+
+// Form group
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  :first-child {
+    margin-right: $form-group-spacing;
+  }
+
+  // Hide spin buttons on input field
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    // Hide spin buttons on input field in Firefox
+    -moz-appearance: textfield;
+    width: $input-width;
+    height: $input-height;
+    border-radius: $input-height / 2;
+    border: 1px solid $border-color;
+    outline: none;
+    padding: 0 $input-height / 4;
+    box-sizing: border-box;
+    font: normal 300 $input-font-size Helvetica, Arial, sans-serif;
+  }
+}

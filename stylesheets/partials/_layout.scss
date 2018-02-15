@@ -1,0 +1,51 @@
+// Remove margins on the html element
+html {
+  padding: 0;
+  margin: 0;
+}
+// Set up body layout
+body {
+  margin: 0;
+  padding: $body-padding;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .progress-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .controls-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Place header in the top-left corner
+.header {
+  top: $body-padding;
+  left: $body-padding;
+  position: absolute;
+}
+
+// Media query for portrait orientation
+@media screen and (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+// Media query for landscape orientation
+@media screen and (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}

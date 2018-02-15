@@ -1,0 +1,50 @@
+.switch {
+  // Hide the default checkbox.
+  .check {
+    display: none;
+  }
+
+  // Create background element. Should a label tag.
+  .label {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: $switch-height;
+    width: $switch-width;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: $switch-border-size solid $switch-background;
+    border-radius: $switch-height / 2;
+    background: $switch-background;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  // Create state circle
+  .label:before {
+    content: "";
+    display: block;
+    background: $switch-toggle-color;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: $switch-width - $switch-height;
+    // border: 1px solid $switch-background;
+    width: calc(#{$switch-height} - #{2 * $switch-border-size});
+    border-radius: $switch-height / 2;
+    transition: right 0.3s ease-out 0s;
+  }
+
+  // Change background color on check
+  .check:checked + .label {
+    background: $switch-background-checked;
+    border-color: $switch-background-checked;
+  }
+
+  // Move the circle on check
+  .check:checked + .label:before {
+    right: 0;
+  }
+}
