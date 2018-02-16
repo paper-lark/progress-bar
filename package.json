@@ -23,6 +23,8 @@
     "prettier": "^1.10.2",
     "prettier-eslint": "^8.8.1",
     "ruby-sass-loader": "^0.4.0",
-    "style-loader": "^0.20.1"
+    "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.11.0"
   }
 }
